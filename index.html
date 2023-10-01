@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Tracker dApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Action Tracker</h1>
+
+        <!-- Task Addition Section -->
+        <div class="task-section">
+            <h2>Add Task</h2>
+            <input type="text" id="taskDescription" placeholder="Enter task description">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Task List Section -->
+        <div class="task-section">
+            <h2>Task List</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- Task Completion Section -->
+        <div class="task-section">
+            <h2>Complete Task</h2>
+            <input type="number" id="taskId" placeholder="Enter task ID">
+            <button onclick="markTaskComplete()">Mark as Complete</button>
+        </div>
+
+        <!-- Task Assignment Section -->
+        <div class="task-section">
+            <h2>Assign Task</h2>
+            <input type="number" id="assignTaskId" placeholder="Enter task ID">
+            <input type="text" id="assigneeAddress" placeholder="Enter assignee's address">
+            <button onclick="assignTask()">Assign Task</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
